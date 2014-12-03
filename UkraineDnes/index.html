@@ -10,21 +10,29 @@
     <script src="scripts/jquery-2.1.1.min.js"></script>
 </head>
 <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="scripts/bootstrap.min.js"></script>
+
     <!--header - fluid-->
-    <header>
-        <section id="top-nav">
-            <!--TODO-->
+    <header class="row">
+        <section id="top-bar" class="container-fluid">
+            <ul id="top-nav" class="container">
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
         </section>
-        <section id="header-cover">
-            <figure id="ud-logo">
+        <section id="header-cover" class="container-fluid">
+            <figure id="ud-logo" class="container">
                 <a href="#">
                     <img src="images/ud-logo.png" alt="Ukraina Dnes logo" />
                 </a>
             </figure>
         </section>
     </header>
-    <main>
-        <nav>
+    <div class="container">
+        <nav id="main-nav">
             <ul>
                 <li>
                     <a href="#">Начало</a>
@@ -52,10 +60,10 @@
                 </li>
                 <li>
                     <a href="#">Стоп-фейк</a>
-                </li>               
+                </li>
             </ul>
         </nav>
-        <section id="main-content">
+        <section id="main-content" class="col-sm-9">
             <!--here we have 3 sections different by design.. First is the NEWS with tabs-->
             <section id="news-box">
                 <!--TODO-->
@@ -67,7 +75,7 @@
                 <!--TODO-->
             </section>
         </section>
-        <aside>
+        <aside class="col-sm-3">
             <section id="search-field">
                 <form>
                     <input type="search" name="search" />
@@ -76,15 +84,15 @@
             </section>
             <section id="aside-box">
                 <!--TODO-->
-            </section>            
+            </section>
         </aside>
-    </main>
+        </div>
 
-    <!--footer - fluid-->
-    <footer>       
-        <section id="bottom-info">
-            <aside>
-                <nav>
+        <!--footer - fluid-->
+    <footer class="row">
+        <section id="bottom-info" class="container">
+            <aside class="col-sm-3">
+                <nav id="bottom-nav">
                     <ul>
                         <li>
                             <a href="#">Начало</a>
@@ -116,7 +124,7 @@
                     </ul>
                 </nav>
             </aside>
-            <section id="about-us">
+            <section id="about-us" class="col-sm-9">
                 <article>
                     <p>
                         Съвременният мислещ човек изпитва все по-малко и по-малко необходимост да гледа телевизия. Далеч от телевизора - далеч
@@ -133,12 +141,17 @@
                     </p>
                 </article>
                 <div id="social-media-links">
-                    <!--TODO-->
+                    <a href="#" target="_blank" class="linked-in"></a>
+                    <a href="#" target="_blank" class="pinterest"></a>
+                    <a href="#" target="_blank" class="facebook"></a>
+                    <a href="#" target="_blank" class="twitter"></a>
+                    <a href="#" target="_blank" class="youtube"></a>
+                    <a href="#" target="_blank" class="googleplus"></a>
                 </div>
             </section>
         </section>
         <section id="bottom-bar">
-            Украйна днес - Всички права запазени!
+            <p class="container">Украйна днес - Всички права запазени!</p>
         </section>
     </footer>
 </body>

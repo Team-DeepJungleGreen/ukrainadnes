@@ -1,8 +1,142 @@
 ﻿html{    
-    font-family:'Open Sans', Arial, sans-serif;    
+    font-family:'Open Sans', Arial, sans-serif;       
     font-size:100%;     
     color:#232838;
 }
+
+/*colors:
+    dark-blue: #232838;
+    pink: #e26a73
+    */
 body{
     background-color:#fff;
+}
+
+#top-bar, #bottom-bar{
+    min-height:2.5rem;
+    background-color:#1f7c8f;
+    color:#fff;    
+    margin:0;
+    vertical-align:middle;
+    font-size:0.9rem;
+}
+#bottom-bar{
+    line-height:2.5rem;
+    margin-bottom:0;
+    color:#e26a73;
+}
+#header-cover{
+    background: url(../images/ud-cover.jpg) no-repeat center;
+    min-height:140px;
+    padding-top:2.3rem;
+}
+#top-nav{
+    margin-top:0.8rem;
+}
+#top-nav li{
+    line-height:1rem;
+    display:inline-block;
+    padding:0 1rem;
+    border-right:1px solid #fff;
+    margin:0;
+}
+#top-nav li:first-child{
+    padding-left:0;
+}
+#top-nav li:last-child{
+    border-right:none;
+}
+
+#top-nav li a{
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+#main-nav ul{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:0.5rem 0;
+}
+#main-nav ul li{
+   padding:0.4rem 0;
+   align-self:flex-start;
+}
+#main-nav ul li a{    
+    color:#e26a73;
+    font-weight:bold;
+    font-size:1rem;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding:0.4rem 0.8rem;
+}
+#main-nav ul li a:hover {
+    background-color:#1f7c8f;
+    color:#fff;
+}
+
+footer{
+    background-color:#232838;
+    margin:0;
+    padding-top:1rem;
+    padding-bottom:-10px;
+}
+footer section#bottom-info{
+    
+}
+
+#bottom-nav ul li{
+    list-style:square;
+    padding:0.3rem;
+}
+#bottom-nav ul li a{
+    color:#e26a73;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+#bottom-nav ul li a:hover {
+    text-decoration:underline;
+}
+
+#about-us{
+    color:#fff;
+    font-size:0.8rem;
+    border-left:1px solid rgba(31, 124, 143, 0.2);
+    margin-bottom:1rem;
+    
+}
+#about-us article p{
+     padding:0 1rem; 
+     margin-bottom:1.2rem;
+}
+#social-media-links{
+    border-top:1px solid rgba(31, 124, 143, 0.2);
+    padding:1rem;
+        
+}
+#social-media-links a {
+    margin-right:1rem;
+    background: url(../images/social-media-icons-sprite.png) no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    width:45px;
+    height:46px;
+}
+#social-media-links a.linked-in {
+    background-position: 0 0;
+}
+#social-media-links a.pinterest {
+    background-position: -51px 0;
+}
+#social-media-links a.facebook {
+    background-position: -103px 0;
+}
+#social-media-links a.twitter {
+    background-position: -153px 0;
+}
+#social-media-links a.youtube {
+    background-position: -205px 0;
+}
+#social-media-links a.googleplus {
+    background-position: -257px 0;
 }
