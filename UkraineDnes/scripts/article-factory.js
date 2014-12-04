@@ -18,7 +18,7 @@ var articleFactory = (function () {
     function createArticle() {
         //Todo Implement proper function and remove the css ;)
         var factory = $('#factory');
-        $('p, h2').hide();
+        var elems = $('p, h2').hide();
 
         if (!factory.length) {
             main.prepend(
@@ -32,7 +32,7 @@ var articleFactory = (function () {
             );
         } else {
 
-            factory.show();
+           return;
         }
 
         $('#add').on('click', function () {
