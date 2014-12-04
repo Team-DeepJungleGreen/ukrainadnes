@@ -12,6 +12,37 @@ body{
     background-color:#fff;
 }
 
+/*remove me*/
+article form{
+    font-size: 20px;
+    margin: 80px auto;
+    padding: 5px;
+    width:600px;
+    height: 400px;
+    border: 2px solid black;
+    background: rgba(255,255,255, 0.5);
+}
+
+article form input[type='text']{
+    color:darkblue;
+    margin: 2% 0 0 12% ;
+    font-size: inherit;
+    border: 1px solid black;
+    width:250px;
+
+}
+
+textarea{
+    color:black;
+    font-size: inherit;
+    width:450px;
+    height: 300px;
+    overflow: hidden;
+    display: block;
+    margin: 10px auto;
+}
+/*---------*/
+
 #top-bar, #bottom-bar{
     min-height:2.5rem;
     background-color:#1f7c8f;
