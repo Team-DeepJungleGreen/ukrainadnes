@@ -1,9 +1,10 @@
 var articles = articles || {};
+var users = users || {};
 
 (function main() {
-    //Todo replace the url if we are not using Parse.
-    var serviceRootUrl = "https://api.parse.com/1/classes/";
+    var serviceRootUrl = "https://api.parse.com/1/";
 
+    users = user.data.get(serviceRootUrl);
     articles = article.data.get(serviceRootUrl);
     articles.getAll(articleFactory.load);
 })();

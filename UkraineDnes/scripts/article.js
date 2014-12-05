@@ -2,7 +2,7 @@ var article = article || {};
 
 article.data = (function () {
     function Article(rootUrl) {
-        this.url = rootUrl + 'Article/';
+        this.url = rootUrl + 'classes/Article/';
         this.data = {};
     }
 

@@ -3,7 +3,6 @@ var articleFactory = (function () {
 
     function loadArticles(data) {
         var articleData = data.results;
-
         //Todo replace with correct fields when DB is ready. Using temp DB fields for testing at the moment.
         for (var i = 0; i < articleData.length; i++) {
             var title = articleData[i].title;
@@ -18,7 +17,7 @@ var articleFactory = (function () {
     function createArticle() {
         //Todo Implement proper function and remove the css ;)
         var factory = $('#factory');
-        var elems = $('p, h2').hide();
+        $('p, h2').hide();
 
         if (!factory.length) {
             main.prepend(
@@ -46,7 +45,7 @@ var articleFactory = (function () {
                 tags: tags
             };
 
-            articles.add(data, success)
+            articles.add(data, success, error);
         });
     }
 

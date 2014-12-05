@@ -15,7 +15,6 @@ body{
 /*remove me*/
 article form{
     font-size: 20px;
-    margin: 80px auto;
     padding: 5px;
     width:600px;
     height: 400px;
@@ -23,23 +22,37 @@ article form{
     background: rgba(255,255,255, 0.5);
 }
 
-article form input[type='text']{
+article form input{
     color:darkblue;
-    margin: 2% 0 0 12% ;
+    margin: 2% 0 0 10px ;
     font-size: inherit;
     border: 1px solid black;
-    width:250px;
-
+    width:200px;
 }
 
+article form label{
+    text-align: right;
+    width:450px;
+}
 textarea{
     color:black;
     font-size: inherit;
     width:450px;
-    height: 300px;
+    height: 200px;
     overflow: hidden;
     display: block;
     margin: 10px auto;
+    resize: none;
+}
+
+article button{
+    margin: 20px 5px 0 0;
+    color:black;
+}
+#form-name{
+    padding-top:10px;
+    display: block;
+    text-align: center;
 }
 /*---------*/
 

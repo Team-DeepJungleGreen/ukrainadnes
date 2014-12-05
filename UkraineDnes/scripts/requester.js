@@ -16,8 +16,8 @@ var ajaxRequester = (function () {
         });
     };
 
-    var makeGetRequest = function (url, success, error) {
-        return makeRequest('GET', url, null, success, error);
+    var makeGetRequest = function (url, success, error, data) {
+        return makeRequest('GET', url, data, success, error);
     };
 
     var makePostRequest = function (url, data, success, error) {
