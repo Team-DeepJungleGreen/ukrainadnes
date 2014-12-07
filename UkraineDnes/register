@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css.map">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<title>
+	</title>
+	<script>
+	$( document ).ready(function() {
+	//check passwords match
+		$( "#register" ).submit(function( event ) {
+			if($("#pass").val()!=$("#confirmPass").val()){
+			event.preventDefault();	
+			$("#passAlert").show();
+		}
+		});
+		//hide alert if passwords mismatch
+		$( ".passAlert" ).click(function() {
+		$("#passAlert").hide();
+		});
+	});
+	</script>
+	</head>
+	<body>
+	
+		<form method="POST" id="register" action="" >
+		<div class="col-sm-2">
+		<!-- username, pass, fname, lname, email -- varchar(45)-->
+			<label for="user">User Name:</label>
+			<input type="text" name="user" id="user" class="form-control" maxlength="45" required/>
+			<label for="pass">Password:</label>
+			<input type="password" name="pass" id="pass" class="form-control passAlert" maxlength="45" required/>
+			<!-- check pass===confirmPass-->
+			<label for="confirmPass">Confirm Password:</label>
+			<input type="password" name="confirmPass" id="confirmPass" class="form-control passAlert" maxlength="45" required/>
+			<span style="color:red; display: None" id="passAlert">
+				Passwords must match!
+			</span>
+			<label for="fName">First Name:</label>
+			<input type="text" name="fName" id="fName" class="form-control" maxlength="45" required/>
+			<label for="lName">Last Name:</label>
+			<input type="text" name="lName" id="lName" class="form-control" maxlength="45" required/>
+			<label for="fName">E-mail:</label>
+			<input type="email" name="email" id="email" class="form-control" maxlength="45" required/><br/>
+			<input type="submit" value="Register" class="btn btn-success"/>
+		</div>
+		</form>
+	
+	</body>
+	
+</html>
