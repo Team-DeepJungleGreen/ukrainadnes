@@ -1,5 +1,5 @@
 var articleFactory = (function () {
-    var main = $('article');
+    var main = $('#news-box');
 
     function loadArticles(data) {
         var articleData = data.results;
@@ -9,8 +9,8 @@ var articleFactory = (function () {
             var content = articleData[i].text;
 
             main.append($
-            ('<h2>' + title + '</h2>' +
-            '<p>' + content + '</p>'));
+            ('<div>'+'<h2>' + title + '</h2>' +
+            '<p>' + content + '</p>'+'</div>'));
         }
     }
 

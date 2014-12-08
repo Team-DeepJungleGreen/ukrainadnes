@@ -30,9 +30,7 @@
                 </a>
             </figure>
         </section>
-    </header>
-    <div class="container">
-        <nav id="main-nav">
+        <nav id="main-nav" class="container">
             <ul>
                 <li>
                     <a href="#">Начало</a>
@@ -63,25 +61,22 @@
                 </li>
             </ul>
         </nav>
+    </header>
+    <div class="container">
+
         <section id="main-content" class="col-sm-9">
+            <button type="button" id="add-article" title="Add Article" name="search-button" value="Search" onclick="articleFactory.create()">Add Article</button>
             <!--here we have 3 sections different by design.. First is the NEWS with tabs-->
             <section id="news-box">
-                <!--Remove me-->
-                <button type="button" title="Add Article" name="search-button" value="Search" onclick="articleFactory.create()">Add Article</button>
+                <!--Remove me--
                 <!--End-->
-            </section>
-            <section id="news-box">
-                <!--TODO-->
-            </section>
-            <section id="news-box">
-                <!--TODO-->
             </section>
         </section>
         <aside class="col-sm-3">
             <section id="search-field">
                 <form>
-                    <input type="search" name="search" />
-                    <button type="submit" title="Search" name="search-button" value="Search">Search</button>
+                    <input type="search" name="search" placeholder="Search..."/>
+                    <button type="submit" title="Search" name="search-button" value="Search"></button>
                 </form>
             </section>
             <section id="aside-box">
